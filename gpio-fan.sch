@@ -1,0 +1,1125 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "GPIO + Fan Controller + Accelerometer"
+Date "2019-12-26"
+Rev "1.0"
+Comp ""
+Comment1 "© 2019 Aaron Williams"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5E179DB4
+P 1250 2050
+F 0 "J3" H 1250 2150 50 0000 C CNN
+F 1 "Conn_01x02" V 1400 2000 50 0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical" H 1250 2050 50 0001 C CNN
+F 3 "~" H 1250 2050 50 0001 C CNN
+F 4 "-" H 0 0 50 0001 C CNN "MFR"
+F 5 "-" H 0 0 50 0001 C CNN "MPN"
+F 6 "-" H 0 0 50 0001 C CNN "SPR"
+F 7 "-" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    1250 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5E17AA5D
+P 4600 5400
+F 0 "#PWR011" H 4600 5150 50 0001 C CNN
+F 1 "GND" H 4605 5227 50 0000 C CNN
+F 2 "" H 4600 5400 50 0001 C CNN
+F 3 "" H 4600 5400 50 0001 C CNN
+	1    4600 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5E17AFE3
+P 1450 2050
+F 0 "#PWR01" H 1450 1900 50 0001 C CNN
+F 1 "+12V" H 1465 2223 50 0000 C CNN
+F 2 "" H 1450 2050 50 0001 C CNN
+F 3 "" H 1450 2050 50 0001 C CNN
+	1    1450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E17B8D3
+P 1900 2050
+F 0 "#FLG01" H 1900 2125 50 0001 C CNN
+F 1 "PWR_FLAG" H 2050 2250 50 0000 C CNN
+F 2 "" H 1900 2050 50 0001 C CNN
+F 3 "~" H 1900 2050 50 0001 C CNN
+	1    1900 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR02
+U 1 1 5E17BC89
+P 1450 2150
+F 0 "#PWR02" H 1450 1950 50 0001 C CNN
+F 1 "GNDPWR" H 1454 1996 50 0000 C CNN
+F 2 "" H 1450 2100 50 0001 C CNN
+F 3 "" H 1450 2100 50 0001 C CNN
+	1    1450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS214NW Q1
+U 1 1 5E17E22C
+P 6200 5000
+F 0 "Q1" H 6404 5046 50 0000 L CNN
+F 1 "BSS214NW" H 6404 4955 50 0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 6400 4925 50 0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde" H 6200 5000 50 0001 L CNN
+F 4 "Infineon Technologies" H 6200 5000 50 0001 C CNN "MFR"
+F 5 "BSS214NWH6327XTSA1" H 6200 5000 50 0001 C CNN "MPN"
+F 6 "Digikey" H 6200 5000 50 0001 C CNN "SPR"
+F 7 "BSS214NWH6327XTSA1CT-ND" H 6200 5000 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/discrete-semiconductor-products/transistors-fets-mosfets-single/278?k=BSS214NW&k=&pkeyword=BSS214NW&sv=0&pv7=2&pv1989=0&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 6200 5000 50 0001 C CNN "SPURL"
+	1    6200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR015
+U 1 1 5E183DAC
+P 5900 4350
+F 0 "#PWR015" H 5900 4200 50 0001 C CNN
+F 1 "+12V" H 5915 4523 50 0000 C CNN
+F 2 "" H 5900 4350 50 0001 C CNN
+F 3 "" H 5900 4350 50 0001 C CNN
+	1    5900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5E184822
+P 6700 4550
+F 0 "J5" H 6780 4592 50 0000 L CNN
+F 1 "Conn_01x03" H 6780 4501 50 0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 6700 4550 50 0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/022292031_sd.pdf" H 6700 4550 50 0001 C CNN
+F 4 "Molex" H 6700 4550 50 0001 C CNN "MFR"
+F 5 "0022292031" H 6700 4550 50 0001 C CNN "MPN"
+F 6 "Digikey" H 6700 4550 50 0001 C CNN "SPR"
+F 7 "WM2745-ND" H 6700 4550 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=&pkeyword=&sv=0&pv88=169295&pv1791=350796&sf=0&FV=-1%7C23%2C1989%7C0%2C-8%7C314%2C-5%7C3582&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 6700 4550 50 0001 C CNN "SPURL"
+	1    6700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5E185F9C
+P 6400 4700
+F 0 "#PWR017" H 6400 4450 50 0001 C CNN
+F 1 "GND" H 6405 4527 50 0000 C CNN
+F 2 "" H 6400 4700 50 0001 C CNN
+F 3 "" H 6400 4700 50 0001 C CNN
+	1    6400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5E1871C1
+P 6300 5200
+F 0 "#PWR016" H 6300 4950 50 0001 C CNN
+F 1 "GND" H 6305 5027 50 0000 C CNN
+F 2 "" H 6300 5200 50 0001 C CNN
+F 3 "" H 6300 5200 50 0001 C CNN
+	1    6300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5E188D4D
+P 1050 4100
+F 0 "J1" H 968 4517 50 0000 C CNN
+F 1 "Conn_01x05" H 968 4426 50 0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x05_P1.27mm_Vertical" H 1050 4100 50 0001 C CNN
+F 3 "http://suddendocs.samtec.com/prints/slm-s.pdf" H 1050 4100 50 0001 C CNN
+F 4 "Samtec Inc." H 1050 4100 50 0001 C CNN "MFR"
+F 5 "SLM-105-01-L-S" H 1050 4100 50 0001 C CNN "MPN"
+F 6 "Digikey" H 1050 4100 50 0001 C CNN "SPR"
+F 7 "SAM11788-ND" H 1050 4100 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/samtec-inc/SLM-105-01-L-S/SAM11788-ND/6691859" H 1050 4100 50 0001 C CNN "SPURL"
+	1    1050 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E18A06F
+P 2200 4450
+F 0 "C1" H 2315 4496 50 0000 L CNN
+F 1 "1uF" H 2315 4405 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2238 4300 50 0001 C CNN
+F 3 "~" H 2200 4450 50 0001 C CNN
+F 4 "Samsung" H 0 0 50 0001 C CNN "MFR"
+F 5 "CL10B105KA8NNNC" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "1276-1184-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    2200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5E18E9D6
+P 1700 4300
+F 0 "#PWR03" H 1700 4150 50 0001 C CNN
+F 1 "+3.3V" H 1715 4473 50 0000 C CNN
+F 2 "" H 1700 4300 50 0001 C CNN
+F 3 "" H 1700 4300 50 0001 C CNN
+	1    1700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E18F0AF
+P 2200 4300
+F 0 "#FLG02" H 2200 4375 50 0001 C CNN
+F 1 "PWR_FLAG" H 2350 4500 50 0000 C CNN
+F 2 "" H 2200 4300 50 0001 C CNN
+F 3 "~" H 2200 4300 50 0001 C CNN
+	1    2200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E190886
+P 2200 4600
+F 0 "#PWR05" H 2200 4350 50 0001 C CNN
+F 1 "GND" H 2205 4427 50 0000 C CNN
+F 2 "" H 2200 4600 50 0001 C CNN
+F 3 "" H 2200 4600 50 0001 C CNN
+	1    2200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Aaron:PCA9575HF U1
+U 1 1 5E1AB689
+P 4450 4200
+F 0 "U1" H 4000 5200 50 0000 C CNN
+F 1 "PCA9575HF" H 4450 4200 50 0000 C CNN
+F 2 "Aaron:HWQFN-24_EP_4x4_Pitch0.5mm" H 4500 4600 50 0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9575.pdf" H 4500 4600 50 0001 C CNN
+F 4 "NXP USA Inc." H 4450 4200 50 0001 C CNN "MFR"
+F 5 "PCA9575HF,118" H 4450 4200 50 0001 C CNN "MPN"
+F 6 "Digikey" H 4450 4200 50 0001 C CNN "SPR"
+F 7 "568-4771-1-ND" H 4450 4200 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/integrated-circuits-ics/interface-i-o-expanders/749?k=PCA9575HF&k=&pkeyword=PCA9575HF&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 4450 4200 50 0001 C CNN "SPURL"
+	1    4450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR010
+U 1 1 5E1B19A4
+P 3900 2750
+F 0 "#PWR010" H 3900 2600 50 0001 C CNN
+F 1 "+3.3V" H 3915 2923 50 0000 C CNN
+F 2 "" H 3900 2750 50 0001 C CNN
+F 3 "" H 3900 2750 50 0001 C CNN
+	1    3900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E1B24D3
+P 3900 2900
+F 0 "C3" H 3800 3000 50 0000 L CNN
+F 1 "1uF" H 3900 2800 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3938 2750 50 0001 C CNN
+F 3 "~" H 3900 2900 50 0001 C CNN
+F 4 "Samsung" H 0 0 50 0001 C CNN "MFR"
+F 5 "CL10B105KA8NNNC" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "1276-1184-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    3900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5E1B3120
+P 4400 2900
+F 0 "C4" H 4300 3000 50 0000 L CNN
+F 1 "1uF" H 4400 2800 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 2750 50 0001 C CNN
+F 3 "~" H 4400 2900 50 0001 C CNN
+F 4 "Samsung" H 0 0 50 0001 C CNN "MFR"
+F 5 "CL10B105KA8NNNC" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "1276-1184-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    4400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5E1B38F9
+P 4900 2900
+F 0 "C5" H 4800 3000 50 0000 L CNN
+F 1 "1uF" H 4900 2800 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 2750 50 0001 C CNN
+F 3 "~" H 4900 2900 50 0001 C CNN
+F 4 "Samsung" H 0 0 50 0001 C CNN "MFR"
+F 5 "CL10B105KA8NNNC" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "1276-1184-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    4900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5E1B5710
+P 4900 3050
+F 0 "#PWR012" H 4900 2800 50 0001 C CNN
+F 1 "GND" H 4905 2877 50 0000 C CNN
+F 2 "" H 4900 3050 50 0001 C CNN
+F 3 "" H 4900 3050 50 0001 C CNN
+	1    4900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR09
+U 1 1 5E1B649B
+P 3800 3600
+F 0 "#PWR09" H 3800 3450 50 0001 C CNN
+F 1 "+3.3V" H 3815 3773 50 0000 C CNN
+F 2 "" H 3800 3600 50 0001 C CNN
+F 3 "" H 3800 3600 50 0001 C CNN
+	1    3800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5E1B7711
+P 2900 3500
+F 0 "RN1" H 3088 3546 50 0000 L CNN
+F 1 "4.7K" H 3088 3455 50 0000 L CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3175 3500 50 0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf" H 2900 3500 50 0001 C CNN
+F 4 "Bourns Inc." H 0 0 50 0001 C CNN "MFR"
+F 5 "CAY16-4701F4LF" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "CAY16-4701F4LFCT-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    2900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 5E1C0275
+P 2700 2450
+F 0 "#PWR07" H 2700 2300 50 0001 C CNN
+F 1 "+3.3V" H 2715 2623 50 0000 C CNN
+F 2 "" H 2700 2450 50 0001 C CNN
+F 3 "" H 2700 2450 50 0001 C CNN
+	1    2700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR08
+U 1 1 5E1C1ADD
+P 3350 3700
+F 0 "#PWR08" H 3350 3550 50 0001 C CNN
+F 1 "+3.3V" H 3365 3873 50 0000 C CNN
+F 2 "" H 3350 3700 50 0001 C CNN
+F 3 "" H 3350 3700 50 0001 C CNN
+	1    3350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J4
+U 1 1 5E1C452E
+P 6150 3450
+F 0 "J4" H 6200 3967 50 0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 6500 4100 50 0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Horizontal" H 6150 3450 50 0001 C CNN
+F 3 "~" H 6150 3450 50 0001 C CNN
+F 4 "-" H 0 0 50 0001 C CNN "MFR"
+F 5 "-" H 0 0 50 0001 C CNN "MPN"
+F 6 "-" H 0 0 50 0001 C CNN "SPR"
+F 7 "-" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    6150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR013
+U 1 1 5E1C6588
+P 5550 2700
+F 0 "#PWR013" H 5550 2550 50 0001 C CNN
+F 1 "+3.3V" H 5565 2873 50 0000 C CNN
+F 2 "" H 5550 2700 50 0001 C CNN
+F 3 "" H 5550 2700 50 0001 C CNN
+	1    5550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5E1C72DE
+P 6650 3000
+F 0 "#PWR018" H 6650 2750 50 0001 C CNN
+F 1 "GND" H 6800 2900 50 0000 C CNN
+F 2 "" H 6650 3000 50 0001 C CNN
+F 3 "" H 6650 3000 50 0001 C CNN
+	1    6650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5E1C8328
+P 5550 2850
+F 0 "C6" H 5400 2950 50 0000 L CNN
+F 1 "1uF" H 5600 2750 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 2700 50 0001 C CNN
+F 3 "~" H 5550 2850 50 0001 C CNN
+F 4 "Samsung" H 0 0 50 0001 C CNN "MFR"
+F 5 "CL10B105KA8NNNC" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "1276-1184-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    5550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5E1CA2B7
+P 5550 3000
+F 0 "#PWR014" H 5550 2750 50 0001 C CNN
+F 1 "GND" H 5555 2827 50 0000 C CNN
+F 2 "" H 5550 3000 50 0001 C CNN
+F 3 "" H 5550 3000 50 0001 C CNN
+	1    5550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5E1FBF54
+P 1050 5200
+F 0 "J2" H 968 5617 50 0000 C CNN
+F 1 "Conn_01x05" H 968 5526 50 0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1050 5200 50 0001 C CNN
+F 3 "~" H 1050 5200 50 0001 C CNN
+F 4 "-" H 0 0 50 0001 C CNN "MFR"
+F 5 "-" H 0 0 50 0001 C CNN "MPN"
+F 6 "-" H 0 0 50 0001 C CNN "SPR"
+F 7 "-" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    1050 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E1FBF5A
+P 2200 5550
+F 0 "C2" H 2250 5650 50 0000 L CNN
+F 1 "1uF" H 2250 5450 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2238 5400 50 0001 C CNN
+F 3 "~" H 2200 5550 50 0001 C CNN
+F 4 "Samsung" H 0 0 50 0001 C CNN "MFR"
+F 5 "CL10B105KA8NNNC" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "1276-1184-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    2200 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5E1FBF60
+P 2200 5400
+F 0 "#PWR04" H 2200 5250 50 0001 C CNN
+F 1 "+3.3V" H 2215 5573 50 0000 C CNN
+F 2 "" H 2200 5400 50 0001 C CNN
+F 3 "" H 2200 5400 50 0001 C CNN
+	1    2200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E1FBF70
+P 2200 5700
+F 0 "#PWR06" H 2200 5450 50 0001 C CNN
+F 1 "GND" H 2205 5527 50 0000 C CNN
+F 2 "" H 2200 5700 50 0001 C CNN
+F 3 "" H 2200 5700 50 0001 C CNN
+	1    2200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E2252AC
+P 1700 2150
+F 0 "#PWR0101" H 1700 1900 50 0001 C CNN
+F 1 "GND" H 1705 1977 50 0000 C CNN
+F 2 "" H 1700 2150 50 0001 C CNN
+F 3 "" H 1700 2150 50 0001 C CNN
+	1    1700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5E24C964
+P 1250 2750
+F 0 "J6" H 1250 2850 50 0000 C CNN
+F 1 "Conn_01x02" V 1400 2700 50 0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical" H 1250 2750 50 0001 C CNN
+F 3 "http://suddendocs.samtec.com/prints/slm-s.pdf" H 1250 2750 50 0001 C CNN
+F 4 "Samtec Inc." H 1250 2750 50 0001 C CNN "MFR"
+F 5 "SLM-102-01-S-S" H 1250 2750 50 0001 C CNN "MPN"
+F 6 "Digikey" H 1250 2750 50 0001 C CNN "SPR"
+F 7 "SAM9931-ND" H 1250 2750 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/samtec-inc/SLM-102-01-S-S/SAM9931-ND/6678668" H 1250 2750 50 0001 C CNN "SPURL"
+	1    1250 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E24D144
+P 1750 2750
+F 0 "#FLG0101" H 1750 2825 50 0001 C CNN
+F 1 "PWR_FLAG" H 2000 2800 50 0000 C CNN
+F 2 "" H 1750 2750 50 0001 C CNN
+F 3 "~" H 1750 2750 50 0001 C CNN
+	1    1750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5E24DC08
+P 1450 2750
+F 0 "#PWR0102" H 1450 2600 50 0001 C CNN
+F 1 "+5V" H 1465 2923 50 0000 C CNN
+F 2 "" H 1450 2750 50 0001 C CNN
+F 3 "" H 1450 2750 50 0001 C CNN
+	1    1450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E250C55
+P 1450 2850
+F 0 "#PWR0103" H 1450 2600 50 0001 C CNN
+F 1 "GND" H 1455 2677 50 0000 C CNN
+F 2 "" H 1450 2850 50 0001 C CNN
+F 3 "" H 1450 2850 50 0001 C CNN
+	1    1450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5E25696A
+P 1250 3300
+F 0 "J7" H 1250 3400 50 0000 C CNN
+F 1 "Conn_01x02" V 1400 3250 50 0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 1250 3300 50 0001 C CNN
+F 3 "~" H 1250 3300 50 0001 C CNN
+F 4 "-" H 0 0 50 0001 C CNN "MFR"
+F 5 "-" H 0 0 50 0001 C CNN "MPN"
+F 6 "-" H 0 0 50 0001 C CNN "SPR"
+F 7 "-" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    1250 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5E256976
+P 1450 3300
+F 0 "#PWR0104" H 1450 3150 50 0001 C CNN
+F 1 "+5V" H 1465 3473 50 0000 C CNN
+F 2 "" H 1450 3300 50 0001 C CNN
+F 3 "" H 1450 3300 50 0001 C CNN
+	1    1450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E25697E
+P 1450 3400
+F 0 "#PWR0105" H 1450 3150 50 0001 C CNN
+F 1 "GND" H 1455 3227 50 0000 C CNN
+F 2 "" H 1450 3400 50 0001 C CNN
+F 3 "" H 1450 3400 50 0001 C CNN
+	1    1450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5E25F2C6
+P 1250 1400
+F 0 "J8" H 1250 1500 50 0000 C CNN
+F 1 "Conn_01x02" V 1400 1350 50 0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1250 1400 50 0001 C CNN
+F 3 "~" H 1250 1400 50 0001 C CNN
+F 4 "-" H 0 0 50 0001 C CNN "MFR"
+F 5 "-" H 0 0 50 0001 C CNN "MPN"
+F 6 "-" H 0 0 50 0001 C CNN "SPR"
+F 7 "-" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    1250 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0106
+U 1 1 5E25F2CC
+P 1450 1400
+F 0 "#PWR0106" H 1450 1250 50 0001 C CNN
+F 1 "+12V" H 1465 1573 50 0000 C CNN
+F 2 "" H 1450 1400 50 0001 C CNN
+F 3 "" H 1450 1400 50 0001 C CNN
+	1    1450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E25F2E0
+P 1700 1500
+F 0 "#PWR0107" H 1700 1250 50 0001 C CNN
+F 1 "GND" H 1705 1327 50 0000 C CNN
+F 2 "" H 1700 1500 50 0001 C CNN
+F 3 "" H 1700 1500 50 0001 C CNN
+	1    1700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x03 SW1
+U 1 1 5E26FE17
+P 2700 2750
+F 0 "SW1" V 2746 3080 50 0000 L CNN
+F 1 "SW_DIP_x03" V 2655 3080 50 0000 L CNN
+F 2 "Aaron:SW_DIP_SPSTx03_Slide_Wurth_416131160803_8.89x4.98mm_W2.65mm_P1.27mm" H 2700 2750 50 0001 C CNN
+F 3 "https://katalog.we-online.de/em/datasheet/4161311608xx.pdf" H 2700 2750 50 0001 C CNN
+F 4 "Würth Elektronik" H 2700 2750 50 0001 C CNN "MFR"
+F 5 "416131160803" H 2700 2750 50 0001 C CNN "MPN"
+F 6 "Digikey" H 2700 2750 50 0001 C CNN "SPR"
+F 7 "732-3853-1-ND" H 2700 2750 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/switches/dip-switches/194?k=416131160803&k=&pkeyword=416131160803&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 2700 2750 50 0001 C CNN "SPURL"
+	1    2700 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5E2DA035
+P 1900 2200
+F 0 "C7" H 2015 2246 50 0000 L CNN
+F 1 "1uF" H 2015 2155 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 2050 50 0001 C CNN
+F 3 "~" H 1900 2200 50 0001 C CNN
+F 4 "Samsung" H 0 0 50 0001 C CNN "MFR"
+F 5 "CL10B105KA8NNNC" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "1276-1184-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    1900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E2DD9D8
+P 1900 2350
+F 0 "#PWR0108" H 1900 2100 50 0001 C CNN
+F 1 "GND" H 1905 2177 50 0000 C CNN
+F 2 "" H 1900 2350 50 0001 C CNN
+F 3 "" H 1900 2350 50 0001 C CNN
+	1    1900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5E2E91BC
+P 5900 4500
+F 0 "D1" V 5854 4579 50 0000 L CNN
+F 1 "D_Schottky" V 5700 4550 50 0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 5900 4500 50 0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=13923&prodName=CCS15S30" H 5900 4500 50 0001 C CNN
+F 4 "Toshiba Semiconductor and Storage" H 5900 4500 50 0001 C CNN "MFR"
+F 5 "CCS15S30,L3F" H 5900 4500 50 0001 C CNN "MPN"
+F 6 "Digikey" H 5900 4500 50 0001 C CNN "SPR"
+F 7 "CCS15S30L3FCT-ND" H 5900 4500 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/discrete-semiconductor-products/diodes-rectifiers-single/280?k=&pkeyword=&sv=0&pv7=2&sf=1&FV=16%7C39246%2C69%7C409393%2C96%7C400378%2C1989%7C0%2C-8%7C280%2Cmu400mV+%40+1A%7C2261&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 5900 4500 50 0001 C CNN "SPURL"
+	1    5900 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0109
+U 1 1 5E2F1615
+P 6250 4550
+F 0 "#PWR0109" H 6250 4400 50 0001 C CNN
+F 1 "+12V" H 6265 4723 50 0000 C CNN
+F 2 "" H 6250 4550 50 0001 C CNN
+F 3 "" H 6250 4550 50 0001 C CNN
+	1    6250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Aaron:MXC400XXC U2
+U 1 1 5DEB3C96
+P 4600 6200
+F 0 "U2" H 4550 6500 50 0000 L CNN
+F 1 "MXC400XXC" H 4500 5900 50 0000 L CNN
+F 2 "Aaron:MXC400XXC" H 4600 6150 50 0001 C CNN
+F 3 "http://www.memsic.cn/userfiles/files/Datasheets/Accelerometer-Datasheets/MXC400xXC_Rev_B.pdf" H 4600 6150 50 0001 C CNN
+F 4 "Memsic Inc." H 4600 6200 50 0001 C CNN "MFR"
+F 5 "MXC4005XC" H 4600 6200 50 0001 C CNN "MPN"
+F 6 "Digikey" H 4600 6200 50 0001 C CNN "SPR"
+F 7 "1267-1075-1-ND" H 4600 6200 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/sensors-transducers/motion-sensors-accelerometers/515?k=MXC400&k=&pkeyword=MXC400&sv=0&pv7=2&sf=0&FV=-8%7C515&quantity=&ColumnSort=0&page=1&pageSize=500" H 4600 6200 50 0001 C CNN "SPURL"
+	1    4600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 5DEB4E7A
+P 3800 6000
+F 0 "#PWR0110" H 3800 5850 50 0001 C CNN
+F 1 "+3.3V" H 3815 6173 50 0000 C CNN
+F 2 "" H 3800 6000 50 0001 C CNN
+F 3 "" H 3800 6000 50 0001 C CNN
+	1    3800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5DEB5896
+P 4300 6400
+F 0 "#PWR0111" H 4300 6150 50 0001 C CNN
+F 1 "GND" H 4305 6227 50 0000 C CNN
+F 2 "" H 4300 6400 50 0001 C CNN
+F 3 "" H 4300 6400 50 0001 C CNN
+	1    4300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5DEDCDAA
+P 3800 6150
+F 0 "C8" H 3850 6250 50 0000 L CNN
+F 1 "1uF" H 3850 6050 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3838 6000 50 0001 C CNN
+F 3 "~" H 3800 6150 50 0001 C CNN
+F 4 "Samsung" H 0 0 50 0001 C CNN "MFR"
+F 5 "CL10B105KA8NNNC" H 0 0 50 0001 C CNN "MPN"
+F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 7 "1276-1184-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 8 "-" H 0 0 50 0001 C CNN "SPURL"
+	1    3800 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5DEDE0BC
+P 3800 6300
+F 0 "#PWR0112" H 3800 6050 50 0001 C CNN
+F 1 "GND" H 3805 6127 50 0000 C CNN
+F 2 "" H 3800 6300 50 0001 C CNN
+F 3 "" H 3800 6300 50 0001 C CNN
+	1    3800 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 5E5EF691
+P 4400 2750
+F 0 "#PWR0113" H 4400 2600 50 0001 C CNN
+F 1 "+3.3V" H 4415 2923 50 0000 C CNN
+F 2 "" H 4400 2750 50 0001 C CNN
+F 3 "" H 4400 2750 50 0001 C CNN
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 5E5EFBC1
+P 4900 2750
+F 0 "#PWR0114" H 4900 2600 50 0001 C CNN
+F 1 "+3.3V" H 4915 2923 50 0000 C CNN
+F 2 "" H 4900 2750 50 0001 C CNN
+F 3 "" H 4900 2750 50 0001 C CNN
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E440ABE
+P 2500 1450
+F 0 "D2" V 2539 1332 50 0000 R CNN
+F 1 "LED RED" V 2448 1332 50 0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2500 1450 50 0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060RS75000.pdf" H 2500 1450 50 0001 C CNN
+F 4 "Würth Elektronik" H 2500 1450 50 0001 C CNN "MFR"
+F 5 "150060RS75000" H 2500 1450 50 0001 C CNN "MPN"
+F 6 "Digikey" H 2500 1450 50 0001 C CNN "SPR"
+F 7 "732-4978-1-ND" H 2500 1450 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/optoelectronics/led-indication-discrete/105?k=150060RS75000&k=&pkeyword=150060RS75000&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 2500 1450 50 0001 C CNN "SPURL"
+	1    2500 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E441E32
+P 2500 1150
+F 0 "R1" H 2570 1196 50 0000 L CNN
+F 1 "4.7K" H 2570 1105 50 0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 1150 50 0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 2500 1150 50 0001 C CNN
+F 4 "Yageo" H 2500 1150 50 0001 C CNN "MFR"
+F 5 "RC0603FR-074K7L" H 2500 1150 50 0001 C CNN "MPN"
+F 6 "Digikey" H 2500 1150 50 0001 C CNN "SPR"
+F 7 "311-4.70KHRCT-ND" H 2500 1150 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-074K7L/311-4.70KHRCT-ND/730159" H 2500 1150 50 0001 C CNN "SPURL"
+	1    2500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0115
+U 1 1 5E4423A0
+P 2500 1000
+F 0 "#PWR0115" H 2500 850 50 0001 C CNN
+F 1 "+12V" H 2515 1173 50 0000 C CNN
+F 2 "" H 2500 1000 50 0001 C CNN
+F 3 "" H 2500 1000 50 0001 C CNN
+	1    2500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E44E003
+P 3250 1150
+F 0 "R2" H 3320 1196 50 0000 L CNN
+F 1 "33" H 3320 1105 50 0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 1150 50 0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 3250 1150 50 0001 C CNN
+F 4 "Yageo" H 3250 1150 50 0001 C CNN "MFR"
+F 5 "RC0603FR-0733RL" H 3250 1150 50 0001 C CNN "MPN"
+F 6 "Digikey" H 3250 1150 50 0001 C CNN "SPR"
+F 7 "311-33.0HRCT-ND" H 3250 1150 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-0733RL/311-33.0HRCT-ND/730105" H 3250 1150 50 0001 C CNN "SPURL"
+	1    3250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5E44E4CF
+P 3250 1450
+F 0 "D3" V 3289 1332 50 0000 R CNN
+F 1 "LED GREEN" V 3198 1332 50 0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3250 1450 50 0001 C CNN
+F 3 "https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf" H 3250 1450 50 0001 C CNN
+F 4 "Würth Elektronik" H 3250 1450 50 0001 C CNN "MFR"
+F 5 "150060GS55040" H 3250 1450 50 0001 C CNN "MPN"
+F 6 "Digikey" H 3250 1450 50 0001 C CNN "SPR"
+F 7 "732-12014-1-ND" H 3250 1450 50 0001 C CNN "SPN"
+F 8 "https://www.digikey.com/products/en/optoelectronics/led-indication-discrete/105?k=150060gs55040&k=&pkeyword=150060gs55040&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&pageSize=500" H 3250 1450 50 0001 C CNN "SPURL"
+	1    3250 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 5E44E9CD
+P 3250 1000
+F 0 "#PWR0116" H 3250 850 50 0001 C CNN
+F 1 "+3.3V" H 3265 1173 50 0000 C CNN
+F 2 "" H 3250 1000 50 0001 C CNN
+F 3 "" H 3250 1000 50 0001 C CNN
+	1    3250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5E44F0E0
+P 3250 1600
+F 0 "#PWR0117" H 3250 1350 50 0001 C CNN
+F 1 "GND" H 3255 1427 50 0000 C CNN
+F 2 "" H 3250 1600 50 0001 C CNN
+F 3 "" H 3250 1600 50 0001 C CNN
+	1    3250 1600
+	1    0    0    -1  
+$EndComp
+Text Label 1400 4000 0    50   ~ 0
+~INT
+Text Label 1400 4100 0    50   ~ 0
+SCL
+Text Label 1400 4200 0    50   ~ 0
+SDA
+Text Label 5400 5000 0    50   ~ 0
+FAN_CTL
+Text Label 3350 3800 0    50   ~ 0
+SCL
+Text Label 3350 3900 0    50   ~ 0
+SDA
+Text Label 3350 4100 0    50   ~ 0
+~INT
+Text Label 3150 3300 0    50   ~ 0
+FAN_CTL
+Text Label 5250 3400 0    50   ~ 0
+P0_0
+Text Label 5250 3500 0    50   ~ 0
+P0_1
+Text Label 5250 3600 0    50   ~ 0
+P0_2
+Text Label 5250 3700 0    50   ~ 0
+P0_3
+Text Label 5250 3800 0    50   ~ 0
+P0_4
+Text Label 5250 3900 0    50   ~ 0
+P0_5
+Text Label 5250 4000 0    50   ~ 0
+P0_6
+Text Label 5250 4100 0    50   ~ 0
+P0_7
+Text Label 5250 4300 0    50   ~ 0
+P1_0
+Text Label 5250 4400 0    50   ~ 0
+P1_1
+Text Label 5250 4500 0    50   ~ 0
+P1_2
+Text Label 5250 4600 0    50   ~ 0
+P1_3
+Text Label 5650 3250 0    50   ~ 0
+P0_0
+Text Label 5650 3350 0    50   ~ 0
+P0_2
+Text Label 5650 3450 0    50   ~ 0
+P0_4
+Text Label 5650 3550 0    50   ~ 0
+P0_6
+Text Label 5650 3650 0    50   ~ 0
+P1_0
+Text Label 5650 3750 0    50   ~ 0
+P1_2
+Text Label 6550 3250 0    50   ~ 0
+P0_1
+Text Label 6550 3350 0    50   ~ 0
+P0_3
+Text Label 6550 3450 0    50   ~ 0
+P0_5
+Text Label 6550 3550 0    50   ~ 0
+P0_7
+Text Label 6550 3650 0    50   ~ 0
+P1_1
+Text Label 6550 3750 0    50   ~ 0
+P1_3
+Text Label 1400 5100 0    50   ~ 0
+~INT
+Text Label 1400 5200 0    50   ~ 0
+SCL
+Text Label 1400 5300 0    50   ~ 0
+SDA
+Text Label 6300 4800 1    50   ~ 0
+FET
+Text Label 4050 6100 0    50   ~ 0
+SCL
+Text Label 4050 6200 0    50   ~ 0
+SDA
+Text Label 4050 6300 0    50   ~ 0
+~INT
+Text Label 2900 3050 3    50   ~ 0
+SCL_PU
+Text Label 2800 3050 3    50   ~ 0
+SDA_PU
+Text Label 2700 3050 3    50   ~ 0
+~INT_PU
+Text Label 2550 1850 0    50   ~ 0
+FET
+Wire Wire Line
+	6500 4550 6250 4550
+Wire Wire Line
+	6500 4650 6300 4650
+Wire Wire Line
+	6300 4650 6300 4800
+Wire Wire Line
+	6400 4700 6400 4450
+Wire Wire Line
+	6400 4450 6500 4450
+Wire Wire Line
+	1250 4300 1700 4300
+Wire Wire Line
+	2200 4300 1700 4300
+Wire Wire Line
+	2000 3900 2000 4600
+Wire Wire Line
+	2000 4600 2200 4600
+Wire Wire Line
+	1250 3900 2000 3900
+Wire Wire Line
+	6000 5000 5150 5000
+Wire Wire Line
+	4600 5400 4600 5300
+Wire Wire Line
+	4600 5300 4450 5300
+Wire Wire Line
+	1250 4000 1550 4000
+Wire Wire Line
+	1250 4100 1550 4100
+Wire Wire Line
+	1250 4200 1550 4200
+Wire Wire Line
+	3900 2750 4250 2750
+Wire Wire Line
+	4250 2750 4250 3100
+Wire Wire Line
+	4400 2750 4550 2750
+Wire Wire Line
+	4550 3100 4550 2750
+Wire Wire Line
+	4650 3100 4650 2750
+Wire Wire Line
+	4650 2750 4900 2750
+Wire Wire Line
+	4400 3050 3900 3050
+Wire Wire Line
+	4900 3050 4400 3050
+Wire Wire Line
+	3800 4100 2700 4100
+Wire Wire Line
+	2700 4100 2700 3700
+Wire Wire Line
+	2700 3300 2700 3050
+Wire Wire Line
+	2800 3050 2800 3300
+Wire Wire Line
+	2900 3300 2900 3050
+Wire Wire Line
+	3000 3300 3450 3300
+Wire Wire Line
+	6650 3000 6450 3000
+Wire Wire Line
+	6450 3000 6450 3150
+Wire Wire Line
+	5550 2700 5950 2700
+Wire Wire Line
+	5950 2700 5950 3150
+Wire Wire Line
+	5150 3400 5450 3400
+Wire Wire Line
+	5150 3500 5450 3500
+Wire Wire Line
+	5150 3600 5450 3600
+Wire Wire Line
+	5150 3700 5450 3700
+Wire Wire Line
+	5150 3800 5450 3800
+Wire Wire Line
+	5150 3900 5450 3900
+Wire Wire Line
+	5150 4000 5450 4000
+Wire Wire Line
+	5150 4100 5450 4100
+Wire Wire Line
+	5150 4300 5450 4300
+Wire Wire Line
+	5150 4400 5450 4400
+Wire Wire Line
+	5150 4500 5450 4500
+Wire Wire Line
+	5150 4600 5450 4600
+Wire Wire Line
+	5650 3250 5950 3250
+Wire Wire Line
+	5650 3350 5950 3350
+Wire Wire Line
+	5650 3450 5950 3450
+Wire Wire Line
+	5650 3550 5950 3550
+Wire Wire Line
+	5650 3650 5950 3650
+Wire Wire Line
+	5650 3750 5950 3750
+Wire Wire Line
+	6450 3250 6750 3250
+Wire Wire Line
+	6450 3350 6750 3350
+Wire Wire Line
+	6450 3450 6750 3450
+Wire Wire Line
+	6450 3550 6750 3550
+Wire Wire Line
+	6450 3650 6750 3650
+Wire Wire Line
+	6450 3750 6750 3750
+Wire Wire Line
+	2000 5000 2000 5700
+Wire Wire Line
+	2000 5700 2200 5700
+Wire Wire Line
+	1250 5000 2000 5000
+Wire Wire Line
+	1250 5100 1550 5100
+Wire Wire Line
+	1250 5200 1550 5200
+Wire Wire Line
+	1250 5300 1550 5300
+Wire Wire Line
+	2800 3800 2800 3700
+Wire Wire Line
+	2800 3800 3800 3800
+Wire Wire Line
+	2900 3700 2900 3900
+Wire Wire Line
+	2900 3900 3800 3900
+Wire Wire Line
+	3350 3700 3000 3700
+Wire Wire Line
+	1700 2150 1450 2150
+Wire Wire Line
+	1450 2750 1750 2750
+Wire Wire Line
+	1700 1500 1450 1500
+Wire Wire Line
+	2800 2450 2900 2450
+Wire Wire Line
+	2800 2450 2700 2450
+Wire Wire Line
+	6300 4650 5900 4650
+Wire Wire Line
+	4300 6100 4050 6100
+Wire Wire Line
+	4050 6200 4300 6200
+Wire Wire Line
+	4050 6300 4300 6300
+Wire Wire Line
+	3800 6000 4300 6000
+Wire Wire Line
+	2500 1600 2500 1850
+Wire Wire Line
+	2500 1850 2700 1850
+Wire Wire Line
+	1450 2050 1900 2050
+Wire Wire Line
+	1250 5400 2200 5400
+Connection ~ 1450 2050
+Connection ~ 1700 4300
+Connection ~ 2200 4300
+Connection ~ 2200 4600
+Connection ~ 4600 5300
+Connection ~ 3900 2750
+Connection ~ 4400 3050
+Connection ~ 4900 3050
+Connection ~ 5550 2700
+Connection ~ 2200 5700
+Connection ~ 1450 2150
+Connection ~ 1450 2750
+Connection ~ 2800 2450
+Connection ~ 2700 2450
+Connection ~ 6300 4650
+Connection ~ 3800 6000
+Connection ~ 4400 2750
+Connection ~ 4900 2750
+Connection ~ 1900 2050
+Connection ~ 2200 5400
+NoConn ~ 5150 4700
+NoConn ~ 5150 4800
+NoConn ~ 5150 4900
+$EndSCHEMATC
