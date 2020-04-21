@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/aaronw/kicad/Projects/Ralph/led-controller-gpio/gpio-fan.sch</source>
-    <date>Thu 26 Dec 2019 08:35:59 PM PST</date>
+    <date>Tue 21 Apr 2020 04:04:59 AM PDT</date>
     <tool>Eeschema 5.1.5-5.1.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -22,7 +22,14 @@
     <comp ref="J3">
       <value>Conn_01x02</value>
       <footprint>Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://suddendocs.samtec.com/prints/slm-s.pdf</datasheet>
+      <fields>
+        <field name="MFR">Samtec Inc.</field>
+        <field name="MPN">SLM-102-01-S-S</field>
+        <field name="SPN">SAM9931-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/products/en?mpart=SLM-102-01-S-S&amp;v=612</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E179DB4</tstamp>
@@ -41,21 +48,6 @@
       <libsource lib="Transistor_FET" part="BSS214NW" description="20V Vds, 1.5A Id, N-Channel MOSFET, SOT-323"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E17E22C</tstamp>
-    </comp>
-    <comp ref="J5">
-      <value>Conn_01x03</value>
-      <footprint>Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical</footprint>
-      <datasheet>https://www.molex.com/pdm_docs/sd/022292031_sd.pdf</datasheet>
-      <fields>
-        <field name="MFR">Molex</field>
-        <field name="MPN">0022292031</field>
-        <field name="SPN">WM2745-ND</field>
-        <field name="SPR">Digikey</field>
-        <field name="SPURL">https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=&amp;pkeyword=&amp;sv=0&amp;pv88=169295&amp;pv1791=350796&amp;sf=0&amp;FV=-1%7C23%2C1989%7C0%2C-8%7C314%2C-5%7C3582&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;nstock=1&amp;pageSize=500</field>
-      </fields>
-      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E184822</tstamp>
     </comp>
     <comp ref="J1">
       <value>Conn_01x05</value>
@@ -76,6 +68,13 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E18A06F</tstamp>
@@ -99,6 +98,13 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1B24D3</tstamp>
@@ -107,6 +113,13 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1B3120</tstamp>
@@ -115,6 +128,13 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1B38F9</tstamp>
@@ -122,7 +142,14 @@
     <comp ref="RN1">
       <value>4.7K</value>
       <footprint>Resistor_SMD:R_Array_Convex_4x0603</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf</datasheet>
+      <fields>
+        <field name="MFR">Bourns Inc.</field>
+        <field name="MPN">CAY16-4701F4LF</field>
+        <field name="SPN">CAY16-4701F4LFCT-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1B7711</tstamp>
@@ -130,7 +157,14 @@
     <comp ref="J4">
       <value>Conn_02x07_Odd_Even</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Horizontal</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>http://adam-tech.com/downloader.php?p=BHR-XX-HUA-ML.pdf</datasheet>
+      <fields>
+        <field name="MFR">Adam Tech</field>
+        <field name="MPN">BHR-14-HUA-ML</field>
+        <field name="SPN">2057-BHR-14-HUA-ML-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/adam-tech/BHR-14-HUA-ML/2057-BHR-14-HUA-ML-ND/9832592</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_02x07_Odd_Even" description="Generic connector, double row, 02x07, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1C452E</tstamp>
@@ -139,14 +173,28 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1C8328</tstamp>
     </comp>
     <comp ref="J2">
-      <value>Conn_01x05</value>
+      <value>Conn_01x05 DNS</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1FBF54</tstamp>
@@ -155,6 +203,13 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1FBF5A</tstamp>
@@ -175,17 +230,31 @@
       <tstamp>5E24C964</tstamp>
     </comp>
     <comp ref="J7">
-      <value>Conn_01x02</value>
+      <value>Conn_01x02 DNS</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E25696A</tstamp>
     </comp>
     <comp ref="J8">
-      <value>Conn_01x02</value>
+      <value>Conn_01x02 DNS</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E25F2C6</tstamp>
@@ -209,6 +278,13 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E2DA035</tstamp>
@@ -247,6 +323,13 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DEDCDAA</tstamp>
@@ -267,15 +350,16 @@
       <tstamp>5E440ABE</tstamp>
     </comp>
     <comp ref="R1">
-      <value>4.7K</value>
+      <value>1K</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
       <fields>
+        <field name="DESC">RES SMD 1K OHM 1% 1/10W 0603</field>
         <field name="MFR">Yageo</field>
-        <field name="MPN">RC0603FR-074K7L</field>
-        <field name="SPN">311-4.70KHRCT-ND</field>
+        <field name="MPN">RC0603FR-071KL</field>
+        <field name="SPN">311-1.00KHRCT-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">https://www.digikey.com/product-detail/en/yageo/RC0603FR-074K7L/311-4.70KHRCT-ND/730159</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/yageo/RC0603FR-071KL/311-1.00KHRCT-ND/729790</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -310,6 +394,36 @@
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E44E4CF</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x04_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/ps/1719710000-PS-000.pdf</datasheet>
+      <fields>
+        <field name="MFR">Molex</field>
+        <field name="MPN">1719710104</field>
+        <field name="SPN">WM22651-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">https://www.digikey.com/product-detail/en/molex/1719710104/WM22651-ND/9564234</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x04_Male" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E2BAB43</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E2D791F</tstamp>
     </comp>
   </components>
   <libparts>
@@ -366,6 +480,23 @@
         <pin num="25" name="GND" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="Connector" part="Conn_01x04_Male">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x02">
       <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
@@ -379,22 +510,6 @@
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x03">
-      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x03</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x05">
@@ -570,6 +685,9 @@
     <library logical="Aaron">
       <uri>/home/aaronw/kicad/library/aaron/Aaron.lib</uri>
     </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
     <library logical="Connector_Generic">
       <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
     </library>
@@ -584,174 +702,177 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="J5" pin="1"/>
-      <node ref="U1" pin="25"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="J3" pin="2"/>
-      <node ref="J1" pin="1"/>
-      <node ref="J8" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="D3" pin="1"/>
-      <node ref="C1" pin="2"/>
-      <node ref="U2" pin="3"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U1" pin="10"/>
-      <node ref="C6" pin="2"/>
-      <node ref="J6" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="J2" pin="1"/>
-      <node ref="J7" pin="2"/>
-      <node ref="J4" pin="2"/>
-    </net>
-    <net code="2" name="/SDA">
-      <node ref="U2" pin="5"/>
-      <node ref="U1" pin="20"/>
-      <node ref="J1" pin="4"/>
-      <node ref="RN1" pin="3"/>
-      <node ref="J2" pin="4"/>
-    </net>
-    <net code="3" name="/SCL">
-      <node ref="U2" pin="1"/>
-      <node ref="J2" pin="3"/>
-      <node ref="J1" pin="3"/>
-      <node ref="RN1" pin="2"/>
-      <node ref="U1" pin="21"/>
-    </net>
-    <net code="4" name="/~INT">
-      <node ref="RN1" pin="1"/>
-      <node ref="U2" pin="4"/>
-      <node ref="U1" pin="9"/>
-      <node ref="J1" pin="2"/>
-      <node ref="J2" pin="2"/>
-    </net>
-    <net code="5" name="+3V3">
-      <node ref="J1" pin="5"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="C4" pin="1"/>
-      <node ref="U1" pin="4"/>
-      <node ref="RN1" pin="4"/>
-      <node ref="U1" pin="23"/>
-      <node ref="U1" pin="15"/>
-      <node ref="U1" pin="22"/>
-      <node ref="C2" pin="1"/>
-      <node ref="J2" pin="5"/>
-      <node ref="C6" pin="1"/>
-      <node ref="J4" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="U2" pin="6"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="SW1" pin="3"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="R2" pin="1"/>
-      <node ref="C8" pin="1"/>
-    </net>
-    <net code="6" name="+5V">
-      <node ref="J7" pin="1"/>
-      <node ref="J6" pin="1"/>
-    </net>
-    <net code="7" name="/P1_3">
-      <node ref="J4" pin="14"/>
-      <node ref="U1" pin="16"/>
-    </net>
-    <net code="8" name="/P1_2">
-      <node ref="J4" pin="13"/>
-      <node ref="U1" pin="17"/>
-    </net>
-    <net code="9" name="Net-(U1-Pad12)">
-      <node ref="U1" pin="12"/>
-    </net>
-    <net code="10" name="Net-(U1-Pad13)">
-      <node ref="U1" pin="13"/>
-    </net>
-    <net code="11" name="Net-(U1-Pad14)">
-      <node ref="U1" pin="14"/>
-    </net>
-    <net code="12" name="Net-(D3-Pad2)">
-      <node ref="R2" pin="2"/>
-      <node ref="D3" pin="2"/>
-    </net>
-    <net code="13" name="/FET">
-      <node ref="D1" pin="2"/>
-      <node ref="D2" pin="1"/>
-      <node ref="Q1" pin="3"/>
+    <net code="1" name="/FET">
       <node ref="J5" pin="3"/>
+      <node ref="D1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C9" pin="1"/>
     </net>
-    <net code="14" name="+12V">
-      <node ref="C7" pin="1"/>
-      <node ref="J3" pin="1"/>
-      <node ref="R1" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="J8" pin="1"/>
-      <node ref="J5" pin="2"/>
+    <net code="2" name="/~INT_PU">
+      <node ref="SW1" pin="4"/>
+      <node ref="RN1" pin="8"/>
     </net>
-    <net code="15" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2"/>
-      <node ref="R1" pin="2"/>
+    <net code="3" name="/SDA_PU">
+      <node ref="RN1" pin="7"/>
+      <node ref="SW1" pin="5"/>
     </net>
-    <net code="16" name="/SCL_PU">
+    <net code="4" name="/SCL_PU">
       <node ref="RN1" pin="6"/>
       <node ref="SW1" pin="6"/>
     </net>
-    <net code="17" name="/SDA_PU">
-      <node ref="SW1" pin="5"/>
-      <node ref="RN1" pin="7"/>
+    <net code="5" name="/~INT">
+      <node ref="U2" pin="4"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="RN1" pin="1"/>
+      <node ref="U1" pin="9"/>
     </net>
-    <net code="18" name="/~INT_PU">
-      <node ref="RN1" pin="8"/>
-      <node ref="SW1" pin="4"/>
-    </net>
-    <net code="19" name="Net-(U2-Pad2)">
-      <node ref="U2" pin="2"/>
-    </net>
-    <net code="20" name="/P0_2">
-      <node ref="J4" pin="5"/>
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="21" name="/P1_0">
-      <node ref="J4" pin="11"/>
+    <net code="6" name="/P1_0">
       <node ref="U1" pin="19"/>
+      <node ref="J4" pin="11"/>
     </net>
-    <net code="22" name="/P1_1">
-      <node ref="J4" pin="12"/>
-      <node ref="U1" pin="18"/>
-    </net>
-    <net code="23" name="/P0_1">
-      <node ref="J4" pin="4"/>
-      <node ref="U1" pin="1"/>
-    </net>
-    <net code="24" name="/P0_7">
-      <node ref="U1" pin="8"/>
+    <net code="7" name="/P0_7">
       <node ref="J4" pin="10"/>
+      <node ref="U1" pin="8"/>
     </net>
-    <net code="25" name="/P0_6">
+    <net code="8" name="/P0_6">
       <node ref="U1" pin="7"/>
       <node ref="J4" pin="9"/>
     </net>
-    <net code="26" name="/P0_5">
+    <net code="9" name="/P0_5">
       <node ref="J4" pin="8"/>
       <node ref="U1" pin="6"/>
     </net>
-    <net code="27" name="/P0_4">
+    <net code="10" name="/P0_4">
       <node ref="U1" pin="5"/>
       <node ref="J4" pin="7"/>
     </net>
-    <net code="28" name="/P0_3">
+    <net code="11" name="/P0_3">
       <node ref="J4" pin="6"/>
       <node ref="U1" pin="3"/>
     </net>
-    <net code="29" name="/P0_0">
-      <node ref="J4" pin="3"/>
-      <node ref="U1" pin="24"/>
+    <net code="12" name="/P0_2">
+      <node ref="J4" pin="5"/>
+      <node ref="U1" pin="2"/>
     </net>
-    <net code="30" name="/FAN_CTL">
-      <node ref="U1" pin="11"/>
+    <net code="13" name="/P0_1">
+      <node ref="J4" pin="4"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="14" name="/P0_0">
+      <node ref="U1" pin="24"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="15" name="/FAN_CTL">
       <node ref="RN1" pin="5"/>
+      <node ref="U1" pin="11"/>
       <node ref="Q1" pin="1"/>
+    </net>
+    <net code="16" name="/P1_1">
+      <node ref="U1" pin="18"/>
+      <node ref="J4" pin="12"/>
+    </net>
+    <net code="17" name="/SDA">
+      <node ref="J1" pin="4"/>
+      <node ref="U2" pin="5"/>
+      <node ref="RN1" pin="3"/>
+      <node ref="J2" pin="4"/>
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="18" name="/SCL">
+      <node ref="RN1" pin="2"/>
+      <node ref="U1" pin="21"/>
+      <node ref="J2" pin="3"/>
+      <node ref="J1" pin="3"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="19" name="GND">
+      <node ref="J3" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="J4" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="25"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U1" pin="10"/>
+      <node ref="C3" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J7" pin="2"/>
+      <node ref="D3" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="20" name="+3V3">
+      <node ref="J2" pin="5"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="15"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="U1" pin="23"/>
+      <node ref="U1" pin="4"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="J1" pin="5"/>
+      <node ref="RN1" pin="4"/>
+      <node ref="J4" pin="1"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="21" name="/P1_3">
+      <node ref="U1" pin="16"/>
+      <node ref="J4" pin="14"/>
+    </net>
+    <net code="22" name="/P1_2">
+      <node ref="U1" pin="17"/>
+      <node ref="J4" pin="13"/>
+    </net>
+    <net code="23" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="24" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="26" name="+5V">
+      <node ref="J6" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J5" pin="4"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="27" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="28" name="+12V">
+      <node ref="J3" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="29" name="Net-(U2-Pad2)">
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="30" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="R1" pin="2"/>
     </net>
   </nets>
 </export>
