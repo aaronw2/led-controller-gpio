@@ -2,16 +2,16 @@
 <export version="D">
   <design>
     <source>/home/aaronw/kicad/Projects/Ralph/led-controller-gpio/gpio-fan.sch</source>
-    <date>Tue 21 Apr 2020 04:04:59 AM PDT</date>
+    <date>Sun 26 Apr 2020 03:11:08 AM PDT</date>
     <tool>Eeschema 5.1.5-5.1.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>GPIO + Fan Controller + Accelerometer</title>
+        <title>GPIO + Fan Controller + Accelerometer + Temp + Magnetic</title>
         <company/>
-        <rev>1.0</rev>
-        <date>2019-12-26</date>
+        <rev>1.3</rev>
+        <date>2020-04-22</date>
         <source>gpio-fan.sch</source>
-        <comment number="1" value="© 2019 Aaron Williams"/>
+        <comment number="1" value="© 2020 Aaron Williams"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -24,6 +24,7 @@
       <footprint>Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical</footprint>
       <datasheet>http://suddendocs.samtec.com/prints/slm-s.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samtec Inc.</field>
         <field name="MPN">SLM-102-01-S-S</field>
         <field name="SPN">SAM9931-ND</field>
@@ -39,6 +40,7 @@
       <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
       <datasheet>https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Infineon Technologies</field>
         <field name="MPN">BSS214NWH6327XTSA1</field>
         <field name="SPN">BSS214NWH6327XTSA1CT-ND</field>
@@ -54,6 +56,7 @@
       <footprint>Connector_PinSocket_1.27mm:PinSocket_1x05_P1.27mm_Vertical</footprint>
       <datasheet>http://suddendocs.samtec.com/prints/slm-s.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samtec Inc.</field>
         <field name="MPN">SLM-105-01-L-S</field>
         <field name="SPN">SAM11788-ND</field>
@@ -69,6 +72,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -84,6 +88,7 @@
       <footprint>Aaron:HWQFN-24_EP_4x4_Pitch0.5mm</footprint>
       <datasheet>https://www.nxp.com/docs/en/data-sheet/PCA9575.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">NXP USA Inc.</field>
         <field name="MPN">PCA9575HF,118</field>
         <field name="SPN">568-4771-1-ND</field>
@@ -99,6 +104,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -114,6 +120,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -129,6 +136,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -139,26 +147,12 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E1B38F9</tstamp>
     </comp>
-    <comp ref="RN1">
-      <value>4.7K</value>
-      <footprint>Resistor_SMD:R_Array_Convex_4x0603</footprint>
-      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf</datasheet>
-      <fields>
-        <field name="MFR">Bourns Inc.</field>
-        <field name="MPN">CAY16-4701F4LF</field>
-        <field name="SPN">CAY16-4701F4LFCT-ND</field>
-        <field name="SPR">Digikey</field>
-        <field name="SPURL">-</field>
-      </fields>
-      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E1B7711</tstamp>
-    </comp>
     <comp ref="J4">
       <value>Conn_02x07_Odd_Even</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Horizontal</footprint>
       <datasheet>http://adam-tech.com/downloader.php?p=BHR-XX-HUA-ML.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Adam Tech</field>
         <field name="MPN">BHR-14-HUA-ML</field>
         <field name="SPN">2057-BHR-14-HUA-ML-ND</field>
@@ -174,6 +168,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -204,6 +199,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -219,11 +215,12 @@
       <footprint>Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical</footprint>
       <datasheet>http://suddendocs.samtec.com/prints/slm-s.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samtec Inc.</field>
         <field name="MPN">SLM-102-01-S-S</field>
         <field name="SPN">SAM9931-ND</field>
         <field name="SPR">Digikey</field>
-        <field name="SPURL">https://www.digikey.com/product-detail/en/samtec-inc/SLM-102-01-S-S/SAM9931-ND/6678668</field>
+        <field name="SPURL">https://www.digikey.com/products/en?mpart=SLM-102-01-S-S&amp;v=612</field>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -264,6 +261,7 @@
       <footprint>Aaron:SW_DIP_SPSTx03_Slide_Wurth_416131160803_8.89x4.98mm_W2.65mm_P1.27mm</footprint>
       <datasheet>https://katalog.we-online.de/em/datasheet/4161311608xx.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Würth Elektronik</field>
         <field name="MPN">416131160803</field>
         <field name="SPN">732-3853-1-ND</field>
@@ -279,6 +277,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -294,6 +293,7 @@
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <datasheet>https://toshiba.semicon-storage.com/info/docget.jsp?did=13923&amp;prodName=CCS15S30</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Toshiba Semiconductor and Storage</field>
         <field name="MPN">CCS15S30,L3F</field>
         <field name="SPN">CCS15S30L3FCT-ND</field>
@@ -304,26 +304,12 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E2E91BC</tstamp>
     </comp>
-    <comp ref="U2">
-      <value>MXC400XXC</value>
-      <footprint>Aaron:MXC400XXC</footprint>
-      <datasheet>http://www.memsic.cn/userfiles/files/Datasheets/Accelerometer-Datasheets/MXC400xXC_Rev_B.pdf</datasheet>
-      <fields>
-        <field name="MFR">Memsic Inc.</field>
-        <field name="MPN">MXC4005XC</field>
-        <field name="SPN">1267-1075-1-ND</field>
-        <field name="SPR">Digikey</field>
-        <field name="SPURL">https://www.digikey.com/products/en/sensors-transducers/motion-sensors-accelerometers/515?k=MXC400&amp;k=&amp;pkeyword=MXC400&amp;sv=0&amp;pv7=2&amp;sf=0&amp;FV=-8%7C515&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;pageSize=500</field>
-      </fields>
-      <libsource lib="Aaron" part="MXC400XXC" description="Three-Axiss Accelerometer"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5DEB3C96</tstamp>
-    </comp>
     <comp ref="C8">
-      <value>1uF</value>
+      <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -339,6 +325,7 @@
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>https://katalog.we-online.de/led/datasheet/150060RS75000.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Würth Elektronik</field>
         <field name="MPN">150060RS75000</field>
         <field name="SPN">732-4978-1-ND</field>
@@ -370,6 +357,7 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Yageo</field>
         <field name="MPN">RC0603FR-0733RL</field>
         <field name="SPN">311-33.0HRCT-ND</field>
@@ -385,6 +373,7 @@
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <datasheet>https://www.we-online.de/web/en/index.php/download/media/07_electronic_components/download_center_1/application_notes_berichte/ano002_leds___the_future_of_horticultural_lighting/ANO002b_EN_LEDs_The_Future_of_Horticultural_Lighting.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Würth Elektronik</field>
         <field name="MPN">150060GS55040</field>
         <field name="SPN">732-12014-1-ND</field>
@@ -400,6 +389,7 @@
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
       <datasheet>https://www.molex.com/pdm_docs/ps/1719710000-PS-000.pdf</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Molex</field>
         <field name="MPN">1719710104</field>
         <field name="SPN">WM22651-ND</field>
@@ -415,6 +405,7 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="DESC">-</field>
         <field name="MFR">Samsung</field>
         <field name="MPN">CL10B105KA8NNNC</field>
         <field name="SPN">1276-1184-1-ND</field>
@@ -425,23 +416,119 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E2D791F</tstamp>
     </comp>
+    <comp ref="RN1">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_Array_Convex_4x0603</footprint>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/CATCAY.pdf</datasheet>
+      <fields>
+        <field name="DESC">-</field>
+        <field name="MFR">Bourns Inc.</field>
+        <field name="MPN">CAY16-4701F4LF</field>
+        <field name="SPN">CAY16-4701F4LFCT-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1B7711</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LSM303AGRTR</value>
+      <footprint>Package_LGA:LGA-12_2x2mm_P0.5mm</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/lsm303agr.pdf</datasheet>
+      <fields>
+        <field name="DESC">Ultra-compact high-performance eCompass module: ultra-low-power 3D accelerometer and 3D magnetometer</field>
+        <field name="Field4">Ultra-compact high-performance e-compass 3D accelerometer and 3D magnetometer module</field>
+        <field name="Field5">LSM303AGRTR</field>
+        <field name="Field6">1.79 USD</field>
+        <field name="Field7">STMicroelectronics</field>
+        <field name="Field8">Good</field>
+        <field name="MFR">STMicroelectronics</field>
+        <field name="MPN">LSM303AGR</field>
+        <field name="SPN">511-LSM303AGRTR</field>
+        <field name="SPR">Mouser</field>
+        <field name="SPURL">https://www.mouser.com/ProductDetail/STMicroelectronics/LSM303AGRTR?qs=sGAEpiMZZMt8xBNXJng%252BZJOBFDQLWUN69qetCYuhJ4yf7tma9G4CXA%3D%3D</field>
+      </fields>
+      <libsource lib="Aaron" part="LSM303AGRTR" description="Accelerometer, Magnetometer, Temperature, 6 Axis Sensor I²C, SPI Output"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1A5DD7</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DESC">-</field>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1B8E5F</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DESC">-</field>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1B9A00</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.22uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DESC">-</field>
+        <field name="MFR">Samsung</field>
+        <field name="MPN">CL10B105KA8NNNC</field>
+        <field name="SPN">1276-1184-1-ND</field>
+        <field name="SPR">Digikey</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F1CAF73</tstamp>
+    </comp>
   </components>
   <libparts>
-    <libpart lib="Aaron" part="MXC400XXC">
-      <description>Three-Axiss Accelerometer</description>
-      <docs>http://www.memsic.cn/userfiles/files/Datasheets/Accelerometer-Datasheets/MXC400xXC_Rev_B.pdf</docs>
+    <libpart lib="Aaron" part="LSM303AGRTR">
+      <description>Accelerometer, Magnetometer, Temperature, 6 Axis Sensor I²C, SPI Output</description>
+      <docs>LGA-12 STMicroelectronics</docs>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">MXC400XXC</field>
-        <field name="Footprint">Aaron:MXC400XXC</field>
+        <field name="Value">LSM303AGRTR</field>
+        <field name="Footprint">LGA12R50P_200X200X100</field>
+        <field name="Field4">Ultra-compact high-performance e-compass 3D accelerometer and 3D magnetometer module</field>
+        <field name="Field5">LSM303AGRTR</field>
+        <field name="Field6">1.79 USD</field>
+        <field name="Field7">STMicroelectronics</field>
+        <field name="Field8">Good</field>
       </fields>
       <pins>
-        <pin num="1" name="SCL" type="BiDi"/>
-        <pin num="2" name="NC" type="NotConnected"/>
-        <pin num="3" name="GND" type="power_in"/>
-        <pin num="4" name="~INT" type="openCol"/>
-        <pin num="5" name="SDA" type="BiDi"/>
-        <pin num="6" name="VDD" type="power_in"/>
+        <pin num="1" name="SCL/SPC" type="BiDi"/>
+        <pin num="2" name="CS_XL" type="input"/>
+        <pin num="3" name="CS_MAG" type="input"/>
+        <pin num="4" name="SDA/SDI/SDO" type="BiDi"/>
+        <pin num="5" name="C1" type="passive"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="INT_MAG/DRDY" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="VDD_IO" type="power_in"/>
+        <pin num="11" name="INT_2_XL" type="output"/>
+        <pin num="12" name="INT_1_XL" type="output"/>
       </pins>
     </libpart>
     <libpart lib="Aaron" part="PCA9575HF">
@@ -702,144 +789,152 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/FET">
-      <node ref="J5" pin="3"/>
-      <node ref="D1" pin="2"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="D2" pin="1"/>
-      <node ref="C9" pin="1"/>
-    </net>
-    <net code="2" name="/~INT_PU">
-      <node ref="SW1" pin="4"/>
-      <node ref="RN1" pin="8"/>
-    </net>
-    <net code="3" name="/SDA_PU">
-      <node ref="RN1" pin="7"/>
-      <node ref="SW1" pin="5"/>
-    </net>
-    <net code="4" name="/SCL_PU">
-      <node ref="RN1" pin="6"/>
+    <net code="1" name="/SCL_PU">
       <node ref="SW1" pin="6"/>
+      <node ref="RN1" pin="6"/>
     </net>
-    <net code="5" name="/~INT">
-      <node ref="U2" pin="4"/>
-      <node ref="J2" pin="2"/>
-      <node ref="J1" pin="2"/>
-      <node ref="RN1" pin="1"/>
-      <node ref="U1" pin="9"/>
+    <net code="2" name="/SDA_PU">
+      <node ref="SW1" pin="5"/>
+      <node ref="RN1" pin="7"/>
     </net>
-    <net code="6" name="/P1_0">
-      <node ref="U1" pin="19"/>
-      <node ref="J4" pin="11"/>
+    <net code="3" name="/P1_2">
+      <node ref="U1" pin="17"/>
+      <node ref="J4" pin="13"/>
     </net>
-    <net code="7" name="/P0_7">
-      <node ref="J4" pin="10"/>
+    <net code="4" name="/FAN_CTL">
+      <node ref="U1" pin="11"/>
+      <node ref="RN1" pin="5"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="5" name="/P0_7">
       <node ref="U1" pin="8"/>
+      <node ref="J4" pin="10"/>
     </net>
-    <net code="8" name="/P0_6">
+    <net code="6" name="/P0_6">
       <node ref="U1" pin="7"/>
       <node ref="J4" pin="9"/>
     </net>
-    <net code="9" name="/P0_5">
+    <net code="7" name="/P0_5">
       <node ref="J4" pin="8"/>
       <node ref="U1" pin="6"/>
     </net>
-    <net code="10" name="/P0_4">
-      <node ref="U1" pin="5"/>
+    <net code="8" name="/P0_4">
       <node ref="J4" pin="7"/>
+      <node ref="U1" pin="5"/>
     </net>
-    <net code="11" name="/P0_3">
+    <net code="9" name="/P0_3">
       <node ref="J4" pin="6"/>
       <node ref="U1" pin="3"/>
     </net>
-    <net code="12" name="/P0_2">
-      <node ref="J4" pin="5"/>
+    <net code="10" name="/P0_2">
       <node ref="U1" pin="2"/>
+      <node ref="J4" pin="5"/>
     </net>
-    <net code="13" name="/P0_1">
-      <node ref="J4" pin="4"/>
+    <net code="11" name="/P0_1">
       <node ref="U1" pin="1"/>
+      <node ref="J4" pin="4"/>
     </net>
-    <net code="14" name="/P0_0">
-      <node ref="U1" pin="24"/>
+    <net code="12" name="/P0_0">
       <node ref="J4" pin="3"/>
+      <node ref="U1" pin="24"/>
     </net>
-    <net code="15" name="/FAN_CTL">
-      <node ref="RN1" pin="5"/>
-      <node ref="U1" pin="11"/>
-      <node ref="Q1" pin="1"/>
+    <net code="13" name="/P1_0">
+      <node ref="U1" pin="19"/>
+      <node ref="J4" pin="11"/>
     </net>
-    <net code="16" name="/P1_1">
+    <net code="14" name="GND">
+      <node ref="J4" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="J7" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="U1" pin="25"/>
+      <node ref="C9" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="U2" pin="6"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+    </net>
+    <net code="15" name="Net-(C10-Pad1)">
+      <node ref="U2" pin="5"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="16" name="/FET">
+      <node ref="Q1" pin="3"/>
+      <node ref="D1" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="J5" pin="3"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="17" name="/~INT_PU">
+      <node ref="RN1" pin="8"/>
+      <node ref="SW1" pin="4"/>
+    </net>
+    <net code="18" name="/P1_3">
+      <node ref="J4" pin="14"/>
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="19" name="/P1_1">
       <node ref="U1" pin="18"/>
       <node ref="J4" pin="12"/>
     </net>
-    <net code="17" name="/SDA">
-      <node ref="J1" pin="4"/>
-      <node ref="U2" pin="5"/>
-      <node ref="RN1" pin="3"/>
-      <node ref="J2" pin="4"/>
-      <node ref="U1" pin="20"/>
+    <net code="20" name="/~INT">
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="9"/>
+      <node ref="J1" pin="2"/>
+      <node ref="U2" pin="11"/>
+      <node ref="RN1" pin="1"/>
+      <node ref="U2" pin="12"/>
+      <node ref="U2" pin="7"/>
     </net>
-    <net code="18" name="/SCL">
-      <node ref="RN1" pin="2"/>
-      <node ref="U1" pin="21"/>
-      <node ref="J2" pin="3"/>
-      <node ref="J1" pin="3"/>
-      <node ref="U2" pin="1"/>
-    </net>
-    <net code="19" name="GND">
-      <node ref="J3" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="J1" pin="1"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="J4" pin="2"/>
-      <node ref="U2" pin="3"/>
-      <node ref="U1" pin="25"/>
-      <node ref="C4" pin="2"/>
-      <node ref="U1" pin="10"/>
-      <node ref="C3" pin="2"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="J8" pin="2"/>
-      <node ref="J5" pin="1"/>
-      <node ref="C6" pin="2"/>
-      <node ref="J2" pin="1"/>
-      <node ref="J6" pin="2"/>
-      <node ref="J7" pin="2"/>
-      <node ref="D3" pin="1"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C2" pin="2"/>
-    </net>
-    <net code="20" name="+3V3">
+    <net code="21" name="+3V3">
       <node ref="J2" pin="5"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="C1" pin="1"/>
-      <node ref="R2" pin="1"/>
-      <node ref="U1" pin="15"/>
-      <node ref="SW1" pin="3"/>
       <node ref="C2" pin="1"/>
-      <node ref="C6" pin="1"/>
       <node ref="C8" pin="1"/>
-      <node ref="U2" pin="6"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="U1" pin="22"/>
       <node ref="U1" pin="23"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="U2" pin="10"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U2" pin="9"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C11" pin="1"/>
+      <node ref="RN1" pin="4"/>
       <node ref="U1" pin="4"/>
       <node ref="C3" pin="1"/>
       <node ref="C4" pin="1"/>
       <node ref="C5" pin="1"/>
-      <node ref="J1" pin="5"/>
-      <node ref="RN1" pin="4"/>
       <node ref="J4" pin="1"/>
-      <node ref="U1" pin="22"/>
+      <node ref="U1" pin="15"/>
+      <node ref="J1" pin="5"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C6" pin="1"/>
     </net>
-    <net code="21" name="/P1_3">
-      <node ref="U1" pin="16"/>
-      <node ref="J4" pin="14"/>
-    </net>
-    <net code="22" name="/P1_2">
-      <node ref="U1" pin="17"/>
-      <node ref="J4" pin="13"/>
+    <net code="22" name="/SDA">
+      <node ref="U1" pin="20"/>
+      <node ref="RN1" pin="3"/>
+      <node ref="J1" pin="4"/>
+      <node ref="J2" pin="4"/>
+      <node ref="U2" pin="4"/>
     </net>
     <net code="23" name="Net-(U1-Pad12)">
       <node ref="U1" pin="12"/>
@@ -851,28 +946,32 @@
       <node ref="U1" pin="14"/>
     </net>
     <net code="26" name="+5V">
-      <node ref="J6" pin="1"/>
-      <node ref="J7" pin="1"/>
       <node ref="J5" pin="4"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J6" pin="1"/>
       <node ref="R1" pin="1"/>
     </net>
-    <net code="27" name="Net-(D3-Pad2)">
+    <net code="27" name="/SCL">
+      <node ref="J1" pin="3"/>
+      <node ref="U1" pin="21"/>
+      <node ref="J2" pin="3"/>
+      <node ref="U2" pin="1"/>
+      <node ref="RN1" pin="2"/>
+    </net>
+    <net code="28" name="+12V">
+      <node ref="C7" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="J5" pin="2"/>
+      <node ref="J8" pin="1"/>
+    </net>
+    <net code="29" name="Net-(D3-Pad2)">
       <node ref="D3" pin="2"/>
       <node ref="R2" pin="2"/>
     </net>
-    <net code="28" name="+12V">
-      <node ref="J3" pin="1"/>
-      <node ref="J8" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="J5" pin="2"/>
-    </net>
-    <net code="29" name="Net-(U2-Pad2)">
-      <node ref="U2" pin="2"/>
-    </net>
     <net code="30" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2"/>
       <node ref="R1" pin="2"/>
+      <node ref="D2" pin="2"/>
     </net>
   </nets>
 </export>

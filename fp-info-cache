@@ -1,4 +1,4 @@
-19544819433133396
+19554345437743396
 Aaron
 208-7391-55-1902
 http://multimedia.3m.com/mws/media/94472O/3mtm-textooltm-soic-test-and-burn-in-socket-ts0338.pdf
@@ -301,6 +301,13 @@ QFN-24_EP_4x4_Pitch0.5mm
 28
 25
 Aaron
+QFN40P180X260X55-16N
+
+
+0
+16
+16
+Aaron
 QFN50P300X250X85-15N
 
 
@@ -342,6 +349,20 @@ SFH-1412B
 0
 4
 4
+Aaron
+SIPEED-M1
+
+
+0
+78
+76
+Aaron
+SIPEED-M1&M1W
+
+
+0
+77
+74
 Aaron
 SK6812_Mini
 
@@ -392,6 +413,20 @@ SOT-666
 6
 6
 Aaron
+SOT-762-1
+SOT752-1 MO-241 14-VFQFN 14-DHVQFN
+SOT752-1 MO-241 14-VFQFN 14-DHVQFN
+0
+15
+15
+Aaron
+SOT-763-1
+
+
+0
+17
+17
+Aaron
 SOT95P280X145-5N
 
 
@@ -433,6 +468,13 @@ STDP Switch
 0
 5
 4
+Aaron
+SiPEED-M1
+
+
+0
+74
+74
 Aaron
 TDFN--EP-14
 
