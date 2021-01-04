@@ -16,17 +16,16 @@ GPIO is controlled by a PCA9575HF and the accelerometer is a MXC4005XC
 
 I2C Addresses:
 PCA9575HF: 0x20
-LSM6DSL: 0x6B
-LIS3MDLTR: 0x1C
+LSM9DS1TR: 0x6A (accelerometer/gyroscope), 0x1C (magnetic sensor)
 ADS1110A0IDBVR: 1001000 0x48
 
 U1: NXP PCA9575HF,118
-U2: Memsic MXC4005XC
+U2: ST Micro LSM9DS1TR
 U3: Texas Instruments ADS1110A0IDBVR
 SW1: Würth Elektronik 416131160803
 C1-C7, C9, C14: 1uF X7R 0603 (1608) capacitor
 C8,C11,C13,C15: 0.1uF X7R 0603 (1608) capacitor
-C10: 0.22uF XC7R 0603 (1608) capacitor
+C10: 0.01uF XC7R 0603 (1608) capacitor
 C12: 10uF X7R 0603 (1608) capacitor
 D1: Toshiba CCSA15S30,L3F (protection)
 D2: Würth Elektronik Red LED 150060RS75000
