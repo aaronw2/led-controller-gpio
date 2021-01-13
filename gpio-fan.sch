@@ -5,8 +5,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "GPIO + Fan Controller + Accelerometer + Temp + Magnetic"
-Date "2021-01-03"
-Rev "1.8"
+Date "2021-01-13"
+Rev "1.9"
 Comp ""
 Comment1 "© 2020 Aaron Williams"
 Comment2 ""
@@ -267,12 +267,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR07
 U 1 1 5E1C0275
-P 2600 2450
-F 0 "#PWR07" H 2600 2300 50 0001 C CNN
-F 1 "+3.3V" H 2615 2623 50 0000 C CNN
-F 2 "" H 2600 2450 50 0001 C CNN
-F 3 "" H 2600 2450 50 0001 C CNN
-	1    2600 2450
+P 2250 2450
+F 0 "#PWR07" H 2250 2300 50 0001 C CNN
+F 1 "+3.3V" H 2265 2623 50 0000 C CNN
+F 2 "" H 2250 2450 50 0001 C CNN
+F 3 "" H 2250 2450 50 0001 C CNN
+	1    2250 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1083,109 +1083,36 @@ F 9 "RES SMD 1K OHM 1% 1/10W 0603" H 2500 1150 50 0001 C CNN "DESC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Motion:LSM9DS1 U2
-U 1 1 5FF2EF3C
-P 3650 6750
-F 0 "U2" H 3650 5861 50 0000 C CNN
-F 1 "LSM9DS1" H 3650 5770 50 0000 C CNN
-F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 5150 7500 50 0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 3650 6850 50 0001 C CNN
-F 4 "STMicroelectronics" H 0 0 50 0001 C CNN "MFR"
-F 5 "LSM9DS1TR" H 0 0 50 0001 C CNN "MPN"
-F 6 "Digikey" H 0 0 50 0001 C CNN "SPR"
-F 7 "497-14946-1-ND" H 0 0 50 0001 C CNN "SPN"
-F 8 "https://www.digikey.com/en/products/detail/stmicroelectronics/LSM9DS1TR/4988079" H 0 0 50 0001 C CNN "SPURL"
-F 9 "Accelerometer, Gyroscope, Magnetometer, Temperature, 9 Axis Sensor I²C, SPI Output" H 0 0 50 0001 C CNN "DESC"
-	1    3650 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C16
-U 1 1 5FF3F175
-P 2700 7500
-F 0 "C16" H 2750 7600 50 0000 L CNN
-F 1 "0.1uF" H 2750 7400 50 0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2738 7350 50 0001 C CNN
-F 3 "~" H 2700 7500 50 0001 C CNN
-F 4 "Samsung" H -1100 1350 50 0001 C CNN "MFR"
-F 5 "CL10B104KO8WPNC" H -1100 1350 50 0001 C CNN "MPN"
-F 6 "Digikey" H -1100 1350 50 0001 C CNN "SPR"
-F 7 "1276-6582-1-ND" H -1100 1350 50 0001 C CNN "SPN"
-F 8 "-" H -1100 1350 50 0001 C CNN "SPURL"
-F 9 "-" H -2600 1100 50 0001 C CNN "DESC"
-	1    2700 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C10
-U 1 1 5FF44B98
-P 2300 7500
-F 0 "C10" H 2150 7600 50 0000 L CNN
-F 1 "0.01uF" H 2350 7400 50 0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2338 7350 50 0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 2300 7500 50 0001 C CNN
-F 4 "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B103KB8NCNC/3887579" H -3250 4650 50 0001 C CNN "SPURL"
-F 5 "10000pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)" H -3250 4650 50 0001 C CNN "DESC"
-F 6 "Samsung" H 0 0 50 0001 C CNN "MFR"
-F 7 "CL10B103KB8NCNC" H 0 0 50 0001 C CNN "MPN"
-F 8 "Digikey" H 0 0 50 0001 C CNN "SPR"
-F 9 "1276-1921-1-ND" H 0 0 50 0001 C CNN "SPN"
-	1    2300 7500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0111
 U 1 1 5FF5F2FD
-P 4350 7550
-F 0 "#PWR0111" H 4350 7300 50 0001 C CNN
-F 1 "GND" H 4355 7377 50 0000 C CNN
-F 2 "" H 4350 7550 50 0001 C CNN
-F 3 "" H 4350 7550 50 0001 C CNN
-	1    4350 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 5FF6AD3E
-P 2700 7650
-F 0 "#PWR0119" H 2700 7400 50 0001 C CNN
-F 1 "GND" H 2705 7477 50 0000 C CNN
-F 2 "" H 2700 7650 50 0001 C CNN
-F 3 "" H 2700 7650 50 0001 C CNN
-	1    2700 7650
+P 4250 7350
+F 0 "#PWR0111" H 4250 7100 50 0001 C CNN
+F 1 "GND" H 4255 7177 50 0000 C CNN
+F 2 "" H 4250 7350 50 0001 C CNN
+F 3 "" H 4250 7350 50 0001 C CNN
+	1    4250 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0120
 U 1 1 5FF6B1FF
-P 2350 6300
-F 0 "#PWR0120" H 2350 6150 50 0001 C CNN
-F 1 "+3.3V" H 2365 6473 50 0000 C CNN
-F 2 "" H 2350 6300 50 0001 C CNN
-F 3 "" H 2350 6300 50 0001 C CNN
-	1    2350 6300
+P 3050 6200
+F 0 "#PWR0120" H 3050 6050 50 0001 C CNN
+F 1 "+3.3V" H 3065 6373 50 0000 C CNN
+F 2 "" H 3050 6200 50 0001 C CNN
+F 3 "" H 3050 6200 50 0001 C CNN
+	1    3050 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 5FF8520B
-P 1800 7100
-F 0 "#PWR0127" H 1800 6850 50 0001 C CNN
-F 1 "GND" H 1805 6927 50 0000 C CNN
-F 2 "" H 1800 7100 50 0001 C CNN
-F 3 "" H 1800 7100 50 0001 C CNN
-	1    1800 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0128
-U 1 1 5FFA7B2F
-P 4700 6450
-F 0 "#PWR0128" H 4700 6200 50 0001 C CNN
-F 1 "GND" H 4705 6277 50 0000 C CNN
-F 2 "" H 4700 6450 50 0001 C CNN
-F 3 "" H 4700 6450 50 0001 C CNN
-	1    4700 6450
+P 2850 6650
+F 0 "#PWR0127" H 2850 6400 50 0001 C CNN
+F 1 "GND" H 2855 6477 50 0000 C CNN
+F 2 "" H 2850 6650 50 0001 C CNN
+F 3 "" H 2850 6650 50 0001 C CNN
+	1    2850 6650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1214,6 +1141,54 @@ F 7 "568-4771-1-ND" H 4450 4200 50 0001 C CNN "SPN"
 F 8 "https://www.digikey.com/products/en/integrated-circuits-ics/interface-i-o-expanders/749?k=PCA9575HF&k=&pkeyword=PCA9575HF&sv=0&pv7=2&sf=0&quantity=&ColumnSort=0&page=1&stock=1&nstock=1&pageSize=500" H 4450 4200 50 0001 C CNN "SPURL"
 F 9 "-" H 0 0 50 0001 C CNN "DESC"
 	1    4450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Aaron:BMX160 U2
+U 1 1 5FFF4557
+P 3650 6650
+F 0 "U2" H 3650 7517 50 0000 C CNN
+F 1 "BMX160" H 3650 7426 50 0000 C CNN
+F 2 "PQFN50P250X300X100-14N" H 3650 6650 50 0001 L BNN
+F 3 "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmx160-ds0001.pdf" H 3650 6650 50 0001 L BNN
+F 4 "1.2" H 3650 6650 50 0001 L BNN "PARTREV"
+F 5 "IPC-7351B" H 3650 6650 50 0001 L BNN "STANDARD"
+F 6 "Bosch" H 3650 6650 50 0001 L BNN "MF"
+F 7 "Bosch" H 0 0 50 0001 C CNN "MFR"
+F 8 "BMX160" H 0 0 50 0001 C CNN "MPN"
+F 9 "Digikey" H 0 0 50 0001 C CNN "SPR"
+F 10 "828-1087-1-ND" H 0 0 50 0001 C CNN "SPN"
+F 11 "https://www.digikey.com/en/products/detail/bosch-sensortec/BMX160/9674243" H 0 0 50 0001 C CNN "SPURL"
+F 12 "Accelerometer, Gyroscope, Magnetometer, 9 Axis Sensor I²C, SPI Output" H 0 0 50 0001 C CNN "DESC"
+	1    3650 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 600C4D91
+P 2250 2600
+F 0 "C10" H 2300 2700 50 0000 L CNN
+F 1 "0.1uF" H 2300 2500 50 0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2288 2450 50 0001 C CNN
+F 3 "~" H 2250 2600 50 0001 C CNN
+F 4 "Samsung" H -1550 -3550 50 0001 C CNN "MFR"
+F 5 "CL10B104KO8WPNC" H -1550 -3550 50 0001 C CNN "MPN"
+F 6 "Digikey" H -1550 -3550 50 0001 C CNN "SPR"
+F 7 "1276-6582-1-ND" H -1550 -3550 50 0001 C CNN "SPN"
+F 8 "-" H -1550 -3550 50 0001 C CNN "SPURL"
+F 9 "-" H -3050 -3800 50 0001 C CNN "DESC"
+	1    2250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 600C77E4
+P 2250 2750
+F 0 "#PWR0119" H 2250 2500 50 0001 C CNN
+F 1 "GND" H 2255 2577 50 0000 C CNN
+F 2 "" H 2250 2750 50 0001 C CNN
+F 3 "" H 2250 2750 50 0001 C CNN
+	1    2250 2750
 	1    0    0    -1  
 $EndComp
 Text Label 1400 4000 0    50   ~ 0
@@ -1304,8 +1279,6 @@ Text Label 8000 2750 0    50   ~ 0
 ADC_IN
 Text Label 7600 2650 0    50   ~ 0
 PU_OUT
-Text Label 3300 5550 0    50   ~ 0
-DEN_A_G
 Wire Wire Line
 	6300 4650 6300 4800
 Wire Wire Line
@@ -1525,95 +1498,41 @@ Wire Wire Line
 Wire Wire Line
 	2700 3800 3800 3800
 Wire Wire Line
-	2950 7350 2700 7350
-Wire Wire Line
-	2950 7250 2300 7250
-Wire Wire Line
-	2300 7250 2300 7350
-Wire Wire Line
-	4850 5750 4350 5750
-Wire Wire Line
-	3650 5750 3650 5950
-Wire Wire Line
-	3750 5950 3750 5750
-Wire Wire Line
-	3750 5750 3650 5750
-Wire Wire Line
-	3950 5950 3950 5750
-Wire Wire Line
-	3950 5750 3750 5750
-Wire Wire Line
-	4050 5950 4050 5750
-Wire Wire Line
-	4050 5750 3950 5750
-Wire Wire Line
-	4350 6850 4350 6950
-Wire Wire Line
-	4350 7550 3750 7550
-Wire Wire Line
-	4350 6950 4350 7050
-Wire Wire Line
-	4350 7050 4350 7150
-Wire Wire Line
-	4350 7150 4350 7250
-Wire Wire Line
-	4350 7250 4350 7550
-Wire Wire Line
-	3750 7550 3550 7550
-Wire Wire Line
-	2300 7650 2700 7650
-Wire Wire Line
-	2700 3800 2700 6350
-Wire Wire Line
-	2700 6350 2950 6350
-Wire Wire Line
-	2350 6300 2350 6650
-Wire Wire Line
-	2350 6650 2950 6650
-Wire Wire Line
-	2800 3900 2800 6450
-Wire Wire Line
-	2800 6450 2950 6450
-Wire Wire Line
-	2950 6750 1800 6750
-Wire Wire Line
-	1800 6750 1800 7100
-Wire Wire Line
 	2600 4100 3800 4100
-Wire Wire Line
-	2600 4100 2600 5650
-Wire Wire Line
-	2600 6850 2950 6850
-Wire Wire Line
-	2950 6950 2600 6950
 Wire Wire Line
 	2600 6950 2600 6850
 Wire Wire Line
-	4350 6650 4450 6650
-Wire Wire Line
-	4450 6650 4450 5650
-Wire Wire Line
-	4450 5650 2600 5650
-Wire Wire Line
-	2600 5650 2600 6850
-Wire Wire Line
-	4350 6350 4350 5750
-Wire Wire Line
-	4350 5750 4050 5750
-Wire Wire Line
-	4350 6450 4700 6450
-Wire Wire Line
 	4600 5300 4450 5300
 Wire Wire Line
-	5150 4900 5250 4900
+	2600 4100 2600 6850
 Wire Wire Line
-	5250 4900 5250 5550
+	2600 6850 3050 6850
 Wire Wire Line
-	5250 5550 2200 5550
+	2600 6950 3050 6950
 Wire Wire Line
-	2200 5550 2200 7050
+	3050 6550 2800 6550
 Wire Wire Line
-	2200 7050 2950 7050
+	2800 3900 2800 6550
+Wire Wire Line
+	3050 6450 2700 6450
+Wire Wire Line
+	2700 3800 2700 6450
+Wire Wire Line
+	3050 6200 3050 6350
+Wire Wire Line
+	4250 7350 4250 7250
+Wire Wire Line
+	4250 7250 4250 7150
+Wire Wire Line
+	2850 6650 3050 6650
+Wire Wire Line
+	4250 6150 4250 6050
+Wire Wire Line
+	4250 6050 4250 5750
+Wire Wire Line
+	4250 5750 4850 5750
+Wire Wire Line
+	2250 2450 2600 2450
 Connection ~ 1450 2050
 Connection ~ 1700 4300
 Connection ~ 2200 4300
@@ -1644,24 +1563,15 @@ Connection ~ 8700 2050
 Connection ~ 9050 2050
 Connection ~ 7900 2350
 Connection ~ 4850 5750
-Connection ~ 3750 5750
-Connection ~ 3950 5750
-Connection ~ 4050 5750
-Connection ~ 4350 7550
-Connection ~ 4350 6950
-Connection ~ 4350 7050
-Connection ~ 4350 7150
-Connection ~ 4350 7250
-Connection ~ 3750 7550
-Connection ~ 2700 7650
 Connection ~ 2700 3800
 Connection ~ 2800 3900
 Connection ~ 2600 4100
 Connection ~ 2600 6850
-Connection ~ 2600 5650
-Connection ~ 4350 5750
 Connection ~ 4600 5300
+Connection ~ 4250 7250
+Connection ~ 4250 6050
+Connection ~ 2250 2450
 NoConn ~ 5150 4700
 NoConn ~ 5150 4800
-NoConn ~ 4350 6550
+NoConn ~ 5150 4900
 $EndSCHEMATC
